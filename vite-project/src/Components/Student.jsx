@@ -28,3 +28,11 @@ Student.propTypes = {
     age:propTypes.number,
     isMarried:propTypes.bool,
 }
+
+Student.defaultProps = {
+    name: "No_Name",
+    age: 0,
+    isMarried: false,
+};
+
+export default Student;

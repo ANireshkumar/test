@@ -17,6 +17,8 @@ function App() {
 <Student name="Niresh" age={26} isMarried ={true}/>
 <Student name="Ajith" age={27} isMarried ={false}/>
 <Student name="Gokul" age={23} isMarried ={true}/>
+<p>This is default propes</p>
+<Student />
 
     </>
   );
