@@ -3,6 +3,7 @@
 export const Header = () => {
 const isLoggedIn = true;
 const greeting = isLoggedIn ? <p>Welcome Niresh! using the conditional rendering</p> : <P>Please login</P>
+const items = ["Item1", "Item2", "Item3", "Item4", "Item5"];
 
   let customCSS = "code";
   return (
@@ -19,6 +20,12 @@ const greeting = isLoggedIn ? <p>Welcome Niresh! using the conditional rendering
       {/* JSX with conditional rendering */}
       
 {greeting}
+
+{/* JSX with list */}
+<p>This data feching can also done by the fetch api </p>
+<ul>
+  {items.map((items,index)=>(<li key={index}>{items}</li>))}
+</ul>
 
         </div></>
 
