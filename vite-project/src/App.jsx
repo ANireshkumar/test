@@ -1,6 +1,7 @@
 // import { LearnComponent } from "./Components/LearnComponent";
 
 import Header from "./Components/Header";
+import { Student } from "./Components/Student";
 import './Css/App.css'
 
 
@@ -13,7 +14,9 @@ function App() {
 {/*     <>Niresh react learing</>
     <LearnComponent/> */}
     <Header/>
-
+<Student name="Niresh" age={26} isMarried ={true}/>
+<Student name="Ajith" age={27} isMarried ={false}/>
+<Student name="Gokul" age={23} isMarried ={true}/>
 
     </>
   );
