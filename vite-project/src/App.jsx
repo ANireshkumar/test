@@ -1,4 +1,7 @@
+// import { LearnComponent } from "./Components/LearnComponent";
 
+import Header from "./Components/Header";
+import './Css/App.css'
 
 
 
@@ -6,8 +9,11 @@ function App() {
   
 
   return (
-    <div>Niresh react learing</div>
-  
+    <>
+{/*     <>Niresh react learing</>
+    <LearnComponent/> */}
+    <Header/>
+    </>
   );
 }
 
