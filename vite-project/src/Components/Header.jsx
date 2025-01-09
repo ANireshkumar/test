@@ -1,6 +1,8 @@
 
 
 export const Header = () => {
+const isLoggedIn = true;
+const greeting = isLoggedIn ? <p>Welcome Niresh! using the conditional rendering</p> : <P>Please login</P>
 
   let customCSS = "code";
   return (
@@ -13,6 +15,11 @@ export const Header = () => {
 <p className={customCSS}>45+55={45 + 55}</p> 
 <p className={customCSS}>This is to check the color blue violet</p>
     <p style={{fontSize:"25PX", color:"darkblue"}}>This is in line styling</p>
+      
+      {/* JSX with conditional rendering */}
+      
+{greeting}
+
         </div></>
 
 )
