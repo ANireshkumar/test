@@ -1,5 +1,6 @@
 // import { LearnComponent } from "./Components/LearnComponent";
 
+import { ArraySample } from "./Components/ArraySample";
 import { ChildComponent } from "./Components/ChildComponent";
 import Header from "./Components/Header";
 import { Student } from "./Components/Student";
@@ -9,6 +10,21 @@ import './Css/App.css'
 
 function App() {
   
+
+const items = [
+  {id:1 , name: "Niresh"},
+  {id:2 , name: "Mani"},
+  {id:3 , name: "jhon"},
+  {id:4 , name: "master"},
+]
+
+
+
+
+
+
+
+
 
   return (
     <>
@@ -25,6 +41,8 @@ function App() {
 <p>This is a sample child component para 2</p>
 
 </ChildComponent>
+
+<ArraySample items= {items}/>
     </>
   );
 }
