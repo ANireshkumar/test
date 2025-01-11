@@ -3,6 +3,7 @@
 import { ArraySample } from "./Components/ArraySample";
 import { ChildComponent } from "./Components/ChildComponent";
 import Header from "./Components/Header";
+import { MultiComponent } from "./Components/MultiComponent";
 import { OneofSample } from "./Components/OneofSample";
 import { Student } from "./Components/Student";
 import './Css/App.css'
@@ -45,6 +46,9 @@ const items = [
 
 <ArraySample items= {items}/>
 <OneofSample color ="green"/>
+<MultiComponent value = "Hello this is multip type comonent string"/>
+<MultiComponent value = {26}/>
+<MultiComponent value = {true}/>
     </>
   );
 }
