@@ -2,6 +2,7 @@
 
 import { ArraySample } from "./Components/ArraySample";
 import { ChildComponent } from "./Components/ChildComponent";
+import { FunctionSample } from "./Components/FunctionSample";
 import Header from "./Components/Header";
 import { MultiComponent } from "./Components/MultiComponent";
 import { OneofSample } from "./Components/OneofSample";
@@ -21,7 +22,9 @@ const items = [
 ]
 
 
-
+const handleClick =() =>{
+  alert("Button Clicked!!!");
+};
 
 
 
@@ -49,6 +52,10 @@ const items = [
 <MultiComponent value = "Hello this is multip type comonent string"/>
 <MultiComponent value = {26}/>
 <MultiComponent value = {true}/>
+<div>
+  <h2>Parent component</h2>
+<FunctionSample handleClick = {handleClick} />
+</div>
     </>
   );
 }
