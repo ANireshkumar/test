@@ -3,6 +3,7 @@
 import { ArraySample } from "./Components/ArraySample";
 import { ChildComponent } from "./Components/ChildComponent";
 import Header from "./Components/Header";
+import { OneofSample } from "./Components/OneofSample";
 import { Student } from "./Components/Student";
 import './Css/App.css'
 
@@ -14,8 +15,8 @@ function App() {
 const items = [
   {id:1 , name: "Niresh"},
   {id:2 , name: "Mani"},
-  {id:3 , name: "jhon"},
-  {id:4 , name: "master"},
+  {id:3 , name: "Jhon"},
+  {id:4 , name: "Master"},
 ]
 
 
@@ -43,6 +44,7 @@ const items = [
 </ChildComponent>
 
 <ArraySample items= {items}/>
+<OneofSample color ="green"/>
     </>
   );
 }
